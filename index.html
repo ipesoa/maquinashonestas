@@ -250,6 +250,20 @@ body{
   padding-top:18px;
   border-top:3px dashed rgba(0,0,0,.25);
 }
+.source-row{ margin-top:22px !important; }
+.news-source{
+  display:inline-block;
+  border:4px solid var(--blue);
+  border-radius:var(--pill-r);
+  color:var(--ink);
+  background:var(--paper);
+  font-weight:800;
+  padding:10px 18px;
+  text-decoration:none;
+  transition:background .2s ease, color .2s ease, transform .15s ease;
+}
+.news-source:hover{ background:var(--blue); color:var(--paper); transform:translateY(-2px); }
+
 
 .news-tags{
   display:flex;
@@ -394,7 +408,21 @@ function renderPost(post){
   const body = el('div', 'news-body');
   const inner = document.createElement('div');
   const articleBody = document.createElement('div');
-  post.cuerpo.forEach(parr => articleBody.append(el('p', null, parr)));
+  post.cuerpo.forEach(parr => {
+    const value = String(parr);
+    const source = value.match(/^(Abrir repositorio|Ver nota oficial|Consultar fuente original):\s*(https?:\/\/\S+)$/i);
+    if (!source){
+      articleBody.append(el('p', null, value));
+      return;
+    }
+    const row = el('p', 'source-row');
+    const link = el('a', 'news-source', source[1] + ' ↗');
+    link.href = source[2];
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    row.append(link);
+    articleBody.append(row);
+  });
 
   const tags = el('div', 'news-tags');
   post.etiquetas.forEach(t => {

@@ -79,7 +79,7 @@
         "Se lanzó un agente que parsea guiones de cine, animación o novelas y los divide en fragmentos de video optimizados para modelos de generación de video. Cada fragmento genera un prompt coherente con la continuidad de personajes y trama mediante memoria vectorial y funciones de llamada.",
         "Permite automatizar la conversión de guiones en prompts listos para modelos de video AI, reduciendo la necesidad de reescribir manualmente cada escena y garantizando consistencia visual en producciones largas.",
         "pip install penshot + 3 lines of code",
-        "la nota de versión no detalla limitaciones específicas"
+        "Abrir repositorio: https://github.com/neopen/story-shot-agent"
       ],
       "etiquetas": [
         "text to video",
