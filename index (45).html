@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ SEO ============ -->
+<title>máquinashonestas — noticias de IA y tecnología</title>
+<meta name="description" content="máquinashonestas: noticias del mundo de la inteligencia artificial y la tecnología, contadas claras y sin humo.">
+<meta name="keywords" content="inteligencia artificial, IA, tecnología, noticias, mundo IA">
+<meta name="author" content="máquinashonestas">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://TUUSUARIO.github.io/maquinashonestas/">
+
+<!-- Open Graph / redes -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="máquinashonestas — noticias de IA y tecnología">
+<meta property="og:description" content="Noticias del mundo de la inteligencia artificial y la tecnología, contadas claras y sin humo.">
+<meta property="og:url" content="https://TUUSUARIO.github.io/maquinashonestas/">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="máquinashonestas">
+<meta name="twitter:description" content="Noticias de IA y tecnología, sin humo.">
+
+<!-- Datos estructurados para Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "máquinashonestas",
+  "url": "https://TUUSUARIO.github.io/maquinashonestas/",
+  "description": "Noticias del mundo de la inteligencia artificial y la tecnología.",
+  "inLanguage": "es",
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Los agentes de IA llegan al escritorio",
+      "datePublished": "2026-07-20",
+      "inLanguage": "es",
+      "keywords": "ia, tecnología"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Chips: la carrera por la eficiencia",
+      "datePublished": "2026-07-20",
+      "inLanguage": "es",
+      "keywords": "tecnología, mundo"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Regular la IA sin frenarla",
+      "datePublished": "2026-07-20",
+      "inLanguage": "es",
+      "keywords": "ia, mundo"
+    }
+  ]
+}
+</script>
+
+<!-- Tipografía consola -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ==========================================================
+   máquinashonestas — hoja de estilos
+   Paleta:  blanco #ffffff · tinta #1c1c1c · verde #00e414
+            azul #145cf2 · gris tarjeta #d2d2d2
+   ========================================================== */
+:root{
+  --ink:#1c1c1c;
+  --paper:#ffffff;
+  --green:#00e414;
+  --blue:#145cf2;
+  --card:#d2d2d2;
+  --card-open:#c6c6c6;
+  --pill-r:999px;
+  --radius:26px;
+  --border:6px;
+  --pad:20px;
+  --maxw:720px;
+  font-size:16px;
+}
+@media (min-width:900px){
+  :root{ --maxw:820px; --pad:28px; }
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+
+html{ scroll-behavior:smooth; }
+
+body{
+  font-family:"JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  background:var(--paper);
+  color:var(--ink);
+  padding:14px 14px 80px;
+  -webkit-font-smoothing:antialiased;
+}
+
+.wrap{
+  max-width:var(--maxw);
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+}
+
+/* ---------- CABECERA (descuadrada a propósito) ---------- */
+.masthead{
+  border:var(--border) solid var(--green);
+  background:var(--paper);
+  padding:52px var(--pad) 26px;
+  cursor:pointer;
+  user-select:none;
+  transform:rotate(-0.6deg) translateX(-4px);   /* el único elemento torcido */
+  transition:transform .35s cubic-bezier(.2,1.4,.4,1);
+  -webkit-tap-highlight-color:transparent;
+}
+.masthead:hover{ transform:rotate(0.4deg) translateX(2px); }
+.masthead:active{ transform:rotate(0deg) scale(.985); }
+.masthead h1{
+  font-size:clamp(1.7rem, 8.5vw, 4rem);
+  font-weight:400;
+  letter-spacing:-0.04em;
+  text-align:right;
+  white-space:nowrap;
+  line-height:1;
+}
+.masthead h1::after{
+  content:"_";
+  animation:blink 1.1s steps(1) infinite;
+  color:var(--green);
+  font-weight:700;
+}
+@keyframes blink{ 50%{ opacity:0; } }
+
+/* ---------- ETIQUETAS ---------- */
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px 14px;
+  justify-content:space-between;
+}
+.tag{
+  font-family:inherit;
+  font-size:.95rem;
+  border:5px solid var(--blue);
+  border-radius:var(--pill-r);
+  background:var(--paper);
+  color:var(--ink);
+  padding:10px 22px;
+  cursor:pointer;
+  flex:1 1 auto;
+  min-width:110px;
+  text-align:center;
+  transition:background .2s ease, color .2s ease, transform .15s ease;
+}
+.tag:hover{ transform:translateY(-2px); }
+.tag[aria-pressed="true"]{
+  background:var(--blue);
+  color:var(--paper);
+}
+
+/* ---------- BUSCADOR ---------- */
+.searchbox{ position:relative; }
+.searchbox input{
+  width:100%;
+  font-family:inherit;
+  font-size:1.1rem;
+  color:var(--ink);
+  border:6px solid var(--blue);
+  border-radius:var(--pill-r);
+  background:var(--paper);
+  padding:14px 26px;
+  outline:none;
+}
+.searchbox input:focus{ border-color:var(--ink); }
+/* "buscar..." con puntos que se mueven, desaparece al escribir o enfocar */
+.search-ghost{
+  position:absolute;
+  left:32px; top:50%;
+  transform:translateY(-50%);
+  font-size:1.1rem;
+  color:var(--ink);
+  pointer-events:none;
+  opacity:.9;
+  transition:opacity .2s ease;
+}
+.searchbox input:focus ~ .search-ghost,
+.searchbox input:not(:placeholder-shown) ~ .search-ghost{ opacity:0; }
+.search-ghost .dot{
+  display:inline-block;
+  animation:hop 1.4s ease-in-out infinite;
+}
+.search-ghost .dot:nth-child(2){ animation-delay:.18s; }
+.search-ghost .dot:nth-child(3){ animation-delay:.36s; }
+@keyframes hop{
+  0%,60%,100%{ transform:translateY(0); opacity:.35; }
+  30%{ transform:translateY(-5px); opacity:1; }
+}
+
+/* ---------- NOTICIAS ---------- */
+.feed{
+  display:flex;
+  flex-direction:column;
+  gap:26px;
+  list-style:none;
+}
+.news{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:calc(var(--pad) + 4px) var(--pad) var(--pad);
+  transition:background .4s ease, box-shadow .4s ease, transform .4s cubic-bezier(.2,1,.3,1);
+}
+.news.hidden{ display:none; }
+.news.open{
+  background:var(--card-open);
+  box-shadow:0 14px 40px rgba(0,0,0,.18);
+  transform:scale(1.015);
+}
+
+.news-head{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:16px;
+  background:none;
+  border:none;
+  font-family:inherit;
+  color:inherit;
+  text-align:left;
+  cursor:pointer;
+  padding:0;
+}
+.news-head h2{
+  font-size:1.35rem;
+  font-weight:800;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+}
+.news-head time{
+  font-size:1rem;
+  white-space:nowrap;
+}
+
+.news-summary{
+  margin-top:10px;
+  font-size:1.15rem;
+  line-height:1.5;
+  cursor:pointer;
+}
+
+/* cuerpo del artículo: cerrado por defecto, se despliega con animación.
+   El texto SIEMPRE está en el HTML → Google lo lee aunque esté plegado. */
+.news-body{
+  display:grid;
+  grid-template-rows:0fr;
+  transition:grid-template-rows .55s cubic-bezier(.25,1,.3,1);
+}
+.news.open .news-body{ grid-template-rows:1fr; }
+.news-body > div{
+  overflow:hidden;
+  min-height:0;
+}
+.news-body p{
+  margin-top:18px;
+  font-size:1.05rem;
+  line-height:1.65;
+}
+.news-body p:first-child{
+  margin-top:22px;
+  padding-top:18px;
+  border-top:3px dashed rgba(0,0,0,.25);
+}
+
+.news-tags{
+  display:flex;
+  gap:14px;
+  margin-top:22px;
+}
+.news-tag{
+  border:5px solid var(--blue);
+  border-radius:var(--pill-r);
+  background:transparent;
+  color:var(--ink);
+  font-family:inherit;
+  font-size:.9rem;
+  padding:8px 26px;
+  cursor:pointer;
+  transition:background .2s ease, color .2s ease;
+}
+.news-tag:hover{ background:var(--blue); color:var(--paper); }
+
+/* mensaje si el filtro no encuentra nada */
+.empty{
+  display:none;
+  text-align:center;
+  padding:30px;
+  font-size:1.05rem;
+  opacity:.7;
+}
+.empty.show{ display:block; }
+
+/* pie */
+footer{
+  margin-top:40px;
+  text-align:center;
+  font-size:.85rem;
+  opacity:.55;
+}
+
+/* accesibilidad */
+:focus-visible{ outline:4px solid var(--green); outline-offset:3px; }
+@media (prefers-reduced-motion:reduce){
+  *, *::before, *::after{ animation:none !important; transition:none !important; }
+  html{ scroll-behavior:auto; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Cabecera: al pinchar recarga la página (actualiza) -->
+  <header class="masthead" id="masthead" role="button" tabindex="0"
+          aria-label="máquinashonestas — pincha para actualizar">
+    <h1>máquinashonestas</h1>
+  </header>
+
+  <!-- Etiquetas: filtran las noticias. Pincha otra vez para quitar el filtro -->
+  <nav class="tags" aria-label="Filtrar por etiqueta">
+    <button class="tag" data-tag="ia" aria-pressed="false">ia</button>
+    <button class="tag" data-tag="tecnología" aria-pressed="false">tecnología</button>
+    <button class="tag" data-tag="mundo" aria-pressed="false">mundo</button>
+    <button class="tag" data-tag="opinión" aria-pressed="false">opinión</button>
+  </nav>
+
+  <!-- Buscador -->
+  <div class="searchbox">
+    <input id="search" type="search" placeholder=" " autocomplete="off"
+           aria-label="Buscar noticias">
+    <span class="search-ghost" aria-hidden="true">buscar<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></span>
+  </div>
+
+  <!-- ============================================================
+       NOTICIAS
+       Para publicar una nueva: copia un bloque <li class="news">…</li>
+       entero y pégalo ARRIBA del todo dentro de <ul class="feed">.
+       Cambia: h2 (titular), time (fecha, en datetime formato AAAA-MM-DD),
+       el resumen, los párrafos del artículo y los data-tag.
+       ============================================================ -->
+  <main>
+    <ul class="feed" id="feed">
+
+      <li class="news" data-tags="ia tecnología">
+        <article itemscope itemtype="https://schema.org/NewsArticle">
+          <button class="news-head" aria-expanded="false">
+            <h2 itemprop="headline">Los agentes de IA llegan al escritorio</h2>
+            <time datetime="2026-07-20" itemprop="datePublished">20/07/2026</time>
+          </button>
+          <p class="news-summary" itemprop="description">Las grandes tecnológicas apuestan por asistentes que no solo responden: abren programas, mueven archivos y terminan tareas solos.</p>
+          <div class="news-body">
+            <div>
+              <div itemprop="articleBody">
+                <p>Durante años el asistente de IA vivió dentro de una caja de chat. Escribías, respondía, y todo lo demás lo hacías tú. Esa frontera se está borrando: la nueva generación de agentes puede manejar el navegador, rellenar formularios, organizar carpetas y encadenar pasos sin supervisión constante.</p>
+                <p>El cambio importa porque transforma la IA de consultor en compañero de trabajo. Ya no se trata de preguntar cómo se hace algo, sino de pedir que se haga. Las empresas que antes medían la utilidad en respuestas por minuto ahora la miden en tareas completadas.</p>
+                <p>Quedan preguntas honestas encima de la mesa: qué permisos damos, cómo auditamos lo que el agente hizo mientras no mirábamos, y quién responde cuando se equivoca. La comodidad llegó antes que las respuestas.</p>
+              </div>
+              <div class="news-tags">
+                <button class="news-tag" data-tag="ia">ia</button>
+                <button class="news-tag" data-tag="tecnología">tecnología</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="news" data-tags="tecnología mundo">
+        <article itemscope itemtype="https://schema.org/NewsArticle">
+          <button class="news-head" aria-expanded="false">
+            <h2 itemprop="headline">Chips: la carrera por la eficiencia</h2>
+            <time datetime="2026-07-20" itemprop="datePublished">20/07/2026</time>
+          </button>
+          <p class="news-summary" itemprop="description">Entrenar modelos gigantes ya no es solo cuestión de potencia: el nuevo campo de batalla es cuánta energía consume cada cálculo.</p>
+          <div class="news-body">
+            <div>
+              <div itemprop="articleBody">
+                <p>La conversación sobre hardware de IA solía girar en torno a un número: cuántas operaciones por segundo. Hoy los fabricantes presumen de otro: cuántas operaciones por vatio. Los centros de datos crecen tan rápido que la factura eléctrica se ha convertido en el límite real del sector.</p>
+                <p>Eso está redibujando el mapa. Países con energía barata y estable atraen inversiones que antes iban a donde estaban los ingenieros. Y los diseñadores de chips exploran arquitecturas especializadas que sacrifican versatilidad a cambio de eficiencia brutal en una sola cosa: mover matrices.</p>
+                <p>La lectura honesta: la IA no compite solo por talento y datos, compite por enchufes. Y esa competición apenas empieza.</p>
+              </div>
+              <div class="news-tags">
+                <button class="news-tag" data-tag="tecnología">tecnología</button>
+                <button class="news-tag" data-tag="mundo">mundo</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="news" data-tags="ia mundo opinión">
+        <article itemscope itemtype="https://schema.org/NewsArticle">
+          <button class="news-head" aria-expanded="false">
+            <h2 itemprop="headline">Regular la IA sin frenarla</h2>
+            <time datetime="2026-07-20" itemprop="datePublished">20/07/2026</time>
+          </button>
+          <p class="news-summary" itemprop="description">Gobiernos de medio mundo buscan el mismo equilibrio imposible: reglas que protejan sin ahogar la innovación. Nadie tiene aún la fórmula.</p>
+          <div class="news-body">
+            <div>
+              <div itemprop="articleBody">
+                <p>Cada pocos meses una nueva propuesta de ley sobre IA aterriza en algún parlamento. Todas prometen lo mismo: proteger a los ciudadanos sin espantar a las empresas. Y todas chocan con el mismo problema: la tecnología cambia más rápido de lo que se redactan los artículos.</p>
+                <p>Europa apostó por reglas detalladas por niveles de riesgo. Otros prefieren principios generales y ver qué pasa. Entre medias, las empresas navegan un tablero donde el mismo producto puede ser legal en un país y papeleo infinito en el de al lado.</p>
+                <p>Lo único claro es que la pregunta ya no es si regular, sino cómo hacerlo sin escribir leyes que nazcan viejas. Eso, de momento, nadie lo ha resuelto.</p>
+              </div>
+              <div class="news-tags">
+                <button class="news-tag" data-tag="ia">ia</button>
+                <button class="news-tag" data-tag="opinión">opinión</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </li>
+
+    </ul>
+    <p class="empty" id="empty">nada por aquí_</p>
+  </main>
+
+  <footer>© máquinashonestas · noticias de ia y tecnología</footer>
+</div>
+
+<script>
+/* ================= interacción ================= */
+
+/* cabecera: pincha → actualiza */
+const masthead = document.getElementById('masthead');
+masthead.addEventListener('click', () => location.reload());
+masthead.addEventListener('keydown', e => {
+  if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); location.reload(); }
+});
+
+/* acordeón de noticias: una abierta a la vez */
+const cards = [...document.querySelectorAll('.news')];
+
+function closeCard(card){
+  card.classList.remove('open');
+  card.querySelector('.news-head').setAttribute('aria-expanded','false');
+}
+function openCard(card){
+  cards.forEach(c => { if (c !== card) closeCard(c); });
+  card.classList.add('open');
+  card.querySelector('.news-head').setAttribute('aria-expanded','true');
+  /* deja la tarjeta a la vista cuando termina de crecer */
+  setTimeout(() => card.scrollIntoView({behavior:'smooth', block:'nearest'}), 300);
+}
+cards.forEach(card => {
+  const toggle = () => card.classList.contains('open') ? closeCard(card) : openCard(card);
+  card.querySelector('.news-head').addEventListener('click', toggle);
+  card.querySelector('.news-summary').addEventListener('click', toggle);
+});
+
+/* filtros: etiquetas + buscador combinados */
+const tagButtons = [...document.querySelectorAll('.tag')];
+const searchInput = document.getElementById('search');
+const empty = document.getElementById('empty');
+let activeTag = null;
+
+function applyFilters(){
+  const q = searchInput.value.trim().toLowerCase();
+  let visible = 0;
+  cards.forEach(card => {
+    const tags = card.dataset.tags.toLowerCase();
+    const text = card.textContent.toLowerCase();
+    const okTag = !activeTag || tags.includes(activeTag);
+    const okSearch = !q || text.includes(q);
+    const show = okTag && okSearch;
+    card.classList.toggle('hidden', !show);
+    if (!show) closeCard(card);
+    if (show) visible++;
+  });
+  empty.classList.toggle('show', visible === 0);
+}
+
+tagButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tag = btn.dataset.tag;
+    activeTag = (activeTag === tag) ? null : tag;
+    tagButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tag === activeTag)));
+    applyFilters();
+  });
+});
+searchInput.addEventListener('input', applyFilters);
+
+/* las etiquetas dentro de cada noticia también filtran */
+document.querySelectorAll('.news-tag').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const tag = btn.dataset.tag;
+    activeTag = tag;
+    tagButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tag === activeTag)));
+    applyFilters();
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+});
+</script>
+</body>
+</html>
