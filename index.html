@@ -22,40 +22,8 @@
 <meta name="twitter:title" content="máquinashonestas">
 <meta name="twitter:description" content="Noticias de IA y tecnología, sin humo.">
 
-<!-- Datos estructurados para Google -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "máquinashonestas",
-  "url": "https://TUUSUARIO.github.io/maquinashonestas/",
-  "description": "Noticias del mundo de la inteligencia artificial y la tecnología.",
-  "inLanguage": "es",
-  "blogPost": [
-    {
-      "@type": "BlogPosting",
-      "headline": "Los agentes de IA llegan al escritorio",
-      "datePublished": "2026-07-20",
-      "inLanguage": "es",
-      "keywords": "ia, tecnología"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Chips: la carrera por la eficiencia",
-      "datePublished": "2026-07-20",
-      "inLanguage": "es",
-      "keywords": "tecnología, mundo"
-    },
-    {
-      "@type": "BlogPosting",
-      "headline": "Regular la IA sin frenarla",
-      "datePublished": "2026-07-20",
-      "inLanguage": "es",
-      "keywords": "ia, mundo"
-    }
-  ]
-}
-</script>
+<!-- Los datos estructurados (JSON-LD) se generan automáticamente
+     a partir de posts.json al cargar la página -->
 
 <!-- Tipografía consola -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -135,7 +103,7 @@ body{
 }
 @keyframes blink{ 50%{ opacity:0; } }
 
-/* ---------- ETIQUETAS ---------- */
+/* ---------- ETIQUETAS (aleatorias en cada carga) ---------- */
 .tags{
   display:flex;
   flex-wrap:wrap;
@@ -155,6 +123,14 @@ body{
   min-width:110px;
   text-align:center;
   transition:background .2s ease, color .2s ease, transform .15s ease;
+  animation:tagIn .45s cubic-bezier(.2,1.2,.3,1) backwards;
+}
+.tag:nth-child(2){ animation-delay:.06s; }
+.tag:nth-child(3){ animation-delay:.12s; }
+.tag:nth-child(4){ animation-delay:.18s; }
+@keyframes tagIn{
+  from{ opacity:0; transform:translateY(8px) scale(.9); }
+  to{ opacity:1; transform:none; }
 }
 .tag:hover{ transform:translateY(-2px); }
 .tag[aria-pressed="true"]{
@@ -253,7 +229,7 @@ body{
 }
 
 /* cuerpo del artículo: cerrado por defecto, se despliega con animación.
-   El texto SIEMPRE está en el HTML → Google lo lee aunque esté plegado. */
+   El texto SIEMPRE está en el DOM → Google lo lee aunque esté plegado. */
 .news-body{
   display:grid;
   grid-template-rows:0fr;
@@ -277,6 +253,7 @@ body{
 
 .news-tags{
   display:flex;
+  flex-wrap:wrap;
   gap:14px;
   margin-top:22px;
 }
@@ -293,7 +270,7 @@ body{
 }
 .news-tag:hover{ background:var(--blue); color:var(--paper); }
 
-/* mensaje si el filtro no encuentra nada */
+/* mensaje si el filtro no encuentra nada / error de carga */
 .empty{
   display:none;
   text-align:center;
@@ -328,13 +305,8 @@ footer{
     <h1>máquinashonestas</h1>
   </header>
 
-  <!-- Etiquetas: filtran las noticias. Pincha otra vez para quitar el filtro -->
-  <nav class="tags" aria-label="Filtrar por etiqueta">
-    <button class="tag" data-tag="ia" aria-pressed="false">ia</button>
-    <button class="tag" data-tag="tecnología" aria-pressed="false">tecnología</button>
-    <button class="tag" data-tag="mundo" aria-pressed="false">mundo</button>
-    <button class="tag" data-tag="opinión" aria-pressed="false">opinión</button>
-  </nav>
+  <!-- Etiquetas: se eligen al azar en cada carga a partir de posts.json -->
+  <nav class="tags" id="tags" aria-label="Filtrar por etiqueta"></nav>
 
   <!-- Buscador -->
   <div class="searchbox">
@@ -343,86 +315,9 @@ footer{
     <span class="search-ghost" aria-hidden="true">buscar<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></span>
   </div>
 
-  <!-- ============================================================
-       NOTICIAS
-       Para publicar una nueva: copia un bloque <li class="news">…</li>
-       entero y pégalo ARRIBA del todo dentro de <ul class="feed">.
-       Cambia: h2 (titular), time (fecha, en datetime formato AAAA-MM-DD),
-       el resumen, los párrafos del artículo y los data-tag.
-       ============================================================ -->
+  <!-- Las noticias se cargan desde posts.json -->
   <main>
-    <ul class="feed" id="feed">
-
-      <li class="news" data-tags="ia tecnología">
-        <article itemscope itemtype="https://schema.org/NewsArticle">
-          <button class="news-head" aria-expanded="false">
-            <h2 itemprop="headline">Los agentes de IA llegan al escritorio</h2>
-            <time datetime="2026-07-20" itemprop="datePublished">20/07/2026</time>
-          </button>
-          <p class="news-summary" itemprop="description">Las grandes tecnológicas apuestan por asistentes que no solo responden: abren programas, mueven archivos y terminan tareas solos.</p>
-          <div class="news-body">
-            <div>
-              <div itemprop="articleBody">
-                <p>Durante años el asistente de IA vivió dentro de una caja de chat. Escribías, respondía, y todo lo demás lo hacías tú. Esa frontera se está borrando: la nueva generación de agentes puede manejar el navegador, rellenar formularios, organizar carpetas y encadenar pasos sin supervisión constante.</p>
-                <p>El cambio importa porque transforma la IA de consultor en compañero de trabajo. Ya no se trata de preguntar cómo se hace algo, sino de pedir que se haga. Las empresas que antes medían la utilidad en respuestas por minuto ahora la miden en tareas completadas.</p>
-                <p>Quedan preguntas honestas encima de la mesa: qué permisos damos, cómo auditamos lo que el agente hizo mientras no mirábamos, y quién responde cuando se equivoca. La comodidad llegó antes que las respuestas.</p>
-              </div>
-              <div class="news-tags">
-                <button class="news-tag" data-tag="ia">ia</button>
-                <button class="news-tag" data-tag="tecnología">tecnología</button>
-              </div>
-            </div>
-          </div>
-        </article>
-      </li>
-
-      <li class="news" data-tags="tecnología mundo">
-        <article itemscope itemtype="https://schema.org/NewsArticle">
-          <button class="news-head" aria-expanded="false">
-            <h2 itemprop="headline">Chips: la carrera por la eficiencia</h2>
-            <time datetime="2026-07-20" itemprop="datePublished">20/07/2026</time>
-          </button>
-          <p class="news-summary" itemprop="description">Entrenar modelos gigantes ya no es solo cuestión de potencia: el nuevo campo de batalla es cuánta energía consume cada cálculo.</p>
-          <div class="news-body">
-            <div>
-              <div itemprop="articleBody">
-                <p>La conversación sobre hardware de IA solía girar en torno a un número: cuántas operaciones por segundo. Hoy los fabricantes presumen de otro: cuántas operaciones por vatio. Los centros de datos crecen tan rápido que la factura eléctrica se ha convertido en el límite real del sector.</p>
-                <p>Eso está redibujando el mapa. Países con energía barata y estable atraen inversiones que antes iban a donde estaban los ingenieros. Y los diseñadores de chips exploran arquitecturas especializadas que sacrifican versatilidad a cambio de eficiencia brutal en una sola cosa: mover matrices.</p>
-                <p>La lectura honesta: la IA no compite solo por talento y datos, compite por enchufes. Y esa competición apenas empieza.</p>
-              </div>
-              <div class="news-tags">
-                <button class="news-tag" data-tag="tecnología">tecnología</button>
-                <button class="news-tag" data-tag="mundo">mundo</button>
-              </div>
-            </div>
-          </div>
-        </article>
-      </li>
-
-      <li class="news" data-tags="ia mundo opinión">
-        <article itemscope itemtype="https://schema.org/NewsArticle">
-          <button class="news-head" aria-expanded="false">
-            <h2 itemprop="headline">Regular la IA sin frenarla</h2>
-            <time datetime="2026-07-20" itemprop="datePublished">20/07/2026</time>
-          </button>
-          <p class="news-summary" itemprop="description">Gobiernos de medio mundo buscan el mismo equilibrio imposible: reglas que protejan sin ahogar la innovación. Nadie tiene aún la fórmula.</p>
-          <div class="news-body">
-            <div>
-              <div itemprop="articleBody">
-                <p>Cada pocos meses una nueva propuesta de ley sobre IA aterriza en algún parlamento. Todas prometen lo mismo: proteger a los ciudadanos sin espantar a las empresas. Y todas chocan con el mismo problema: la tecnología cambia más rápido de lo que se redactan los artículos.</p>
-                <p>Europa apostó por reglas detalladas por niveles de riesgo. Otros prefieren principios generales y ver qué pasa. Entre medias, las empresas navegan un tablero donde el mismo producto puede ser legal en un país y papeleo infinito en el de al lado.</p>
-                <p>Lo único claro es que la pregunta ya no es si regular, sino cómo hacerlo sin escribir leyes que nazcan viejas. Eso, de momento, nadie lo ha resuelto.</p>
-              </div>
-              <div class="news-tags">
-                <button class="news-tag" data-tag="ia">ia</button>
-                <button class="news-tag" data-tag="opinión">opinión</button>
-              </div>
-            </div>
-          </div>
-        </article>
-      </li>
-
-    </ul>
+    <ul class="feed" id="feed"></ul>
     <p class="empty" id="empty">nada por aquí_</p>
   </main>
 
@@ -430,78 +325,210 @@ footer{
 </div>
 
 <script>
-/* ================= interacción ================= */
+/* ============================================================
+   máquinashonestas — carga de posts.json + interacción
+   Estructura esperada de cada post (ver posts.json):
+   {
+     "id":       "slug-unico",
+     "titulo":   "Titular",
+     "fecha":    "AAAA-MM-DD",
+     "resumen":  "Una o dos frases.",
+     "cuerpo":   ["párrafo 1", "párrafo 2", ...],
+     "etiquetas":["ia", "tecnología"]
+   }
+   ============================================================ */
 
-/* cabecera: pincha → actualiza */
+const NUM_TAGS = 4;            // píldoras aleatorias que se muestran
+const feed   = document.getElementById('feed');
+const tagRow = document.getElementById('tags');
+const empty  = document.getElementById('empty');
+const searchInput = document.getElementById('search');
+let cards = [];
+let activeTag = null;
+
+/* cabecera: pincha → actualiza (sin caché, para traer posts nuevos) */
 const masthead = document.getElementById('masthead');
 masthead.addEventListener('click', () => location.reload());
 masthead.addEventListener('keydown', e => {
   if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); location.reload(); }
 });
 
-/* acordeón de noticias: una abierta a la vez */
-const cards = [...document.querySelectorAll('.news')];
+/* ---------- utilidades ---------- */
+function fmtFecha(iso){
+  const [a, m, d] = iso.split('-');
+  return `${d}/${m}/${a}`;
+}
+function shuffle(arr){
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+function el(tag, cls, text){
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text != null) n.textContent = text;
+  return n;
+}
 
+/* ---------- render de un post ---------- */
+function renderPost(post){
+  const li = el('li', 'news');
+  li.dataset.tags = post.etiquetas.join(' ');
+  li.id = post.id;
+
+  const article = document.createElement('article');
+
+  const head = el('button', 'news-head');
+  head.setAttribute('aria-expanded', 'false');
+  const h2 = el('h2', null, post.titulo);
+  const time = document.createElement('time');
+  time.dateTime = post.fecha;
+  time.textContent = fmtFecha(post.fecha);
+  head.append(h2, time);
+
+  const summary = el('p', 'news-summary', post.resumen);
+
+  const body = el('div', 'news-body');
+  const inner = document.createElement('div');
+  const articleBody = document.createElement('div');
+  post.cuerpo.forEach(parr => articleBody.append(el('p', null, parr)));
+
+  const tags = el('div', 'news-tags');
+  post.etiquetas.forEach(t => {
+    const b = el('button', 'news-tag', t);
+    b.dataset.tag = t;
+    b.addEventListener('click', e => {
+      e.stopPropagation();
+      setActiveTag(t);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    tags.append(b);
+  });
+
+  inner.append(articleBody, tags);
+  body.append(inner);
+  article.append(head, summary, body);
+  li.append(article);
+
+  const toggle = () => li.classList.contains('open') ? closeCard(li) : openCard(li);
+  head.addEventListener('click', toggle);
+  summary.addEventListener('click', toggle);
+
+  return li;
+}
+
+/* ---------- acordeón ---------- */
 function closeCard(card){
   card.classList.remove('open');
-  card.querySelector('.news-head').setAttribute('aria-expanded','false');
+  card.querySelector('.news-head').setAttribute('aria-expanded', 'false');
 }
 function openCard(card){
   cards.forEach(c => { if (c !== card) closeCard(c); });
   card.classList.add('open');
-  card.querySelector('.news-head').setAttribute('aria-expanded','true');
-  /* deja la tarjeta a la vista cuando termina de crecer */
-  setTimeout(() => card.scrollIntoView({behavior:'smooth', block:'nearest'}), 300);
+  card.querySelector('.news-head').setAttribute('aria-expanded', 'true');
+  history.replaceState(null, '', '#' + card.id);   /* enlace compartible */
+  setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 300);
 }
-cards.forEach(card => {
-  const toggle = () => card.classList.contains('open') ? closeCard(card) : openCard(card);
-  card.querySelector('.news-head').addEventListener('click', toggle);
-  card.querySelector('.news-summary').addEventListener('click', toggle);
-});
 
-/* filtros: etiquetas + buscador combinados */
-const tagButtons = [...document.querySelectorAll('.tag')];
-const searchInput = document.getElementById('search');
-const empty = document.getElementById('empty');
-let activeTag = null;
+/* ---------- etiquetas aleatorias ---------- */
+function renderRandomTags(posts){
+  const todas = [...new Set(posts.flatMap(p => p.etiquetas))];
+  const elegidas = shuffle(todas).slice(0, NUM_TAGS);
+  tagRow.innerHTML = '';
+  elegidas.forEach(t => {
+    const b = el('button', 'tag', t);
+    b.dataset.tag = t;
+    b.setAttribute('aria-pressed', 'false');
+    b.addEventListener('click', () => setActiveTag(activeTag === t ? null : t));
+    tagRow.append(b);
+  });
+}
+function setActiveTag(tag){
+  activeTag = tag;
+  tagRow.querySelectorAll('.tag').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.tag === activeTag)));
+  applyFilters();
+}
 
+/* ---------- filtros (etiqueta + búsqueda) ---------- */
 function applyFilters(){
   const q = searchInput.value.trim().toLowerCase();
   let visible = 0;
   cards.forEach(card => {
-    const tags = card.dataset.tags.toLowerCase();
-    const text = card.textContent.toLowerCase();
-    const okTag = !activeTag || tags.includes(activeTag);
-    const okSearch = !q || text.includes(q);
+    const okTag = !activeTag || card.dataset.tags.toLowerCase().split(' ').includes(activeTag);
+    const okSearch = !q || card.textContent.toLowerCase().includes(q);
     const show = okTag && okSearch;
     card.classList.toggle('hidden', !show);
     if (!show) closeCard(card);
     if (show) visible++;
   });
+  empty.textContent = 'nada por aquí_';
   empty.classList.toggle('show', visible === 0);
 }
-
-tagButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const tag = btn.dataset.tag;
-    activeTag = (activeTag === tag) ? null : tag;
-    tagButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tag === activeTag)));
-    applyFilters();
-  });
-});
 searchInput.addEventListener('input', applyFilters);
 
-/* las etiquetas dentro de cada noticia también filtran */
-document.querySelectorAll('.news-tag').forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.stopPropagation();
-    const tag = btn.dataset.tag;
-    activeTag = tag;
-    tagButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tag === activeTag)));
-    applyFilters();
-    window.scrollTo({top:0, behavior:'smooth'});
-  });
-});
+/* ---------- SEO: JSON-LD generado desde los posts ---------- */
+function injectJsonLd(posts){
+  const base = document.querySelector('link[rel="canonical"]').href;
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "máquinashonestas",
+    "url": base,
+    "description": "Noticias del mundo de la inteligencia artificial y la tecnología.",
+    "inLanguage": "es",
+    "blogPost": posts.map(p => ({
+      "@type": "BlogPosting",
+      "headline": p.titulo,
+      "datePublished": p.fecha,
+      "description": p.resumen,
+      "articleBody": p.cuerpo.join(" "),
+      "keywords": p.etiquetas.join(", "),
+      "url": base + "#" + p.id,
+      "inLanguage": "es"
+    }))
+  };
+  const s = document.createElement('script');
+  s.type = 'application/ld+json';
+  s.textContent = JSON.stringify(data);
+  document.head.append(s);
+}
+
+/* ---------- arranque ---------- */
+async function init(){
+  try{
+    const res = await fetch('posts.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error(res.status);
+    const data = await res.json();
+
+    /* más recientes primero */
+    const posts = [...data.posts].sort((a, b) => b.fecha.localeCompare(a.fecha));
+
+    renderRandomTags(posts);
+    feed.innerHTML = '';
+    cards = posts.map(p => {
+      const card = renderPost(p);
+      feed.append(card);
+      return card;
+    });
+    injectJsonLd(posts);
+
+    /* si la URL trae #slug, abre esa noticia */
+    const slug = location.hash.slice(1);
+    if (slug){
+      const target = document.getElementById(slug);
+      if (target) openCard(target);
+    }
+  }catch(err){
+    empty.textContent = 'no se pudo cargar posts.json_ (si estás en local, sirve la carpeta con un servidor)';
+    empty.classList.add('show');
+    console.error('máquinashonestas:', err);
+  }
+}
+init();
 </script>
 </body>
 </html>

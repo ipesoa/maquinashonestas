@@ -1,0 +1,12 @@
+{
+  "id": "mi-primera-noticia",
+  "titulo": "Titular de ejemplo",
+  "fecha": "2026-07-21",
+  "resumen": "Una o dos frases que resumen la noticia. Esto es lo que se ve con la tarjeta cerrada.",
+  "cuerpo": [
+    "Primer párrafo del artículo completo. Aparece cuando el lector pincha en la tarjeta y esta se despliega.",
+    "Segundo párrafo. Puedes poner tantos como quieras: cada elemento del array es un párrafo.",
+    "Último párrafo con la conclusión."
+  ],
+  "etiquetas": ["ia", "tecnología"]
+}

@@ -1,0 +1,42 @@
+{
+  "sitio": "máquinashonestas",
+  "actualizado": "2026-07-20",
+  "posts": [
+    {
+      "id": "agentes-ia-escritorio",
+      "titulo": "Los agentes de IA llegan al escritorio",
+      "fecha": "2026-07-20",
+      "resumen": "Las grandes tecnológicas apuestan por asistentes que no solo responden: abren programas, mueven archivos y terminan tareas solos.",
+      "cuerpo": [
+        "Durante años el asistente de IA vivió dentro de una caja de chat. Escribías, respondía, y todo lo demás lo hacías tú. Esa frontera se está borrando: la nueva generación de agentes puede manejar el navegador, rellenar formularios, organizar carpetas y encadenar pasos sin supervisión constante.",
+        "El cambio importa porque transforma la IA de consultor en compañero de trabajo. Ya no se trata de preguntar cómo se hace algo, sino de pedir que se haga. Las empresas que antes medían la utilidad en respuestas por minuto ahora la miden en tareas completadas.",
+        "Quedan preguntas honestas encima de la mesa: qué permisos damos, cómo auditamos lo que el agente hizo mientras no mirábamos, y quién responde cuando se equivoca. La comodidad llegó antes que las respuestas."
+      ],
+      "etiquetas": ["ia", "tecnología"]
+    },
+    {
+      "id": "chips-carrera-eficiencia",
+      "titulo": "Chips: la carrera por la eficiencia",
+      "fecha": "2026-07-20",
+      "resumen": "Entrenar modelos gigantes ya no es solo cuestión de potencia: el nuevo campo de batalla es cuánta energía consume cada cálculo.",
+      "cuerpo": [
+        "La conversación sobre hardware de IA solía girar en torno a un número: cuántas operaciones por segundo. Hoy los fabricantes presumen de otro: cuántas operaciones por vatio. Los centros de datos crecen tan rápido que la factura eléctrica se ha convertido en el límite real del sector.",
+        "Eso está redibujando el mapa. Países con energía barata y estable atraen inversiones que antes iban a donde estaban los ingenieros. Y los diseñadores de chips exploran arquitecturas especializadas que sacrifican versatilidad a cambio de eficiencia brutal en una sola cosa: mover matrices.",
+        "La lectura honesta: la IA no compite solo por talento y datos, compite por enchufes. Y esa competición apenas empieza."
+      ],
+      "etiquetas": ["tecnología", "mundo"]
+    },
+    {
+      "id": "regular-ia-sin-frenarla",
+      "titulo": "Regular la IA sin frenarla",
+      "fecha": "2026-07-20",
+      "resumen": "Gobiernos de medio mundo buscan el mismo equilibrio imposible: reglas que protejan sin ahogar la innovación. Nadie tiene aún la fórmula.",
+      "cuerpo": [
+        "Cada pocos meses una nueva propuesta de ley sobre IA aterriza en algún parlamento. Todas prometen lo mismo: proteger a los ciudadanos sin espantar a las empresas. Y todas chocan con el mismo problema: la tecnología cambia más rápido de lo que se redactan los artículos.",
+        "Europa apostó por reglas detalladas por niveles de riesgo. Otros prefieren principios generales y ver qué pasa. Entre medias, las empresas navegan un tablero donde el mismo producto puede ser legal en un país y papeleo infinito en el de al lado.",
+        "Lo único claro es que la pregunta ya no es si regular, sino cómo hacerlo sin escribir leyes que nazcan viejas. Eso, de momento, nadie lo ha resuelto."
+      ],
+      "etiquetas": ["ia", "mundo", "opinión"]
+    }
+  ]
+}
