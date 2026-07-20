@@ -4,86 +4,87 @@
   "posts": [
     {
       "id": "comfyui-v0-28-0",
-      "titulo": "ComfyUI v0.28.0: mejoras de seguridad y nuevas",
+      "titulo": "ComfyUI v0.28.0 añade nodo de superposición de texto y...",
       "fecha": "2026-07-20",
-      "resumen": "La versión 0.28.0 de ComfyUI incluye mejoras de seguridad, correcciones de errores y nuevas características que mejoran la experiencia del usuario y la",
+      "resumen": "Se introduce un nodo de superposición de texto, se añade soporte para Seedream 5 Pro y SeedVR2, y se eliminan nodos obsoletos de Ideogram y StabilityAI.",
       "cuerpo": [
-        "La versión 0.28.0 de ComfyUI es una herramienta de difusión de modelos de inteligencia artificial que ha sido mejorada con nuevas características y correcciones de errores.",
-        "Entre las mejoras de seguridad se encuentran la corrección de errores y la mejora de la estabilidad de la herramienta.",
-        "Además, la versión 0.28.0 de ComfyUI incluye nuevas características que mejoran la experiencia del usuario y la estabilidad de la herramienta.",
-        "Puedes probar la versión 0.28.0 de ComfyUI descargando el código fuente desde GitHub y siguiendo las instrucciones de instalación.",
-        "La versión 0.28.0 de ComfyUI no incluye soporte para todas las plataformas ni para todos los modelos de difusión."
+        "Se implementó un nodo básico de superposición de texto y se añadió soporte para los modelos Seedream 5 Pro y SeedVR2. Se eliminaron los nodos IdeogramV1, IdeogramV2 y StabilityAI, y se ajustó la categoría de ByteDance.",
+        "El nuevo nodo de superposición de texto permite integrar texto directamente en salidas visuales sin nodos externos, y el soporte para nuevos modelos amplía las opciones de generación de imágenes y audio.",
+        "No se proporcionan pasos o comandos literales para probar la versión en el dosier; consulte la nota oficial.",
+        "La nota de versión no detalla limitaciones específicas."
       ],
       "etiquetas": [
-        "ia",
-        "tecnología"
+        "comfyui",
+        "release",
+        "ai"
       ]
     },
     {
       "id": "llama-cpp-b10069",
-      "titulo": "Actualización de llama.cpp con soporte para broadcast para",
+      "titulo": "llama.cpp b10069 añade soporte OpenCL para Adreno MUL_MAT",
       "fecha": "2026-07-20",
-      "resumen": "La biblioteca de inteligencia artificial llama.cpp ha sido actualizada con soporte para broadcast para Adreno MUL_MAT y honoración de `view_offs` para Adreno",
+      "resumen": "Actualización que habilita broadcast y manejo de view_offs en GPUs Adreno para inferencia multihilo en llama-server, con binarios para múltiples plataformas.",
       "cuerpo": [
-        "La biblioteca de inteligencia artificial llama.cpp ha sido actualizada con soporte para broadcast para Adreno MUL_MAT y honoración de `view_offs` para Adreno Q8_0 MUL_MAT.",
-        "Esta actualización permite a los desarrolladores aprovechar al máximo las capacidades de la tarjeta gráfica Adreno en sus aplicaciones de inteligencia artificial.",
-        "Puedes descargar la última versión de llama.cpp desde el repositorio de GitHub de ggml-org/llama.cpp y seguir las instrucciones de compilación y ejecución.",
-        "La actualización solo está disponible para la versión b10069 de la biblioteca y puede requerir actualizaciones adicionales en las aplicaciones que la utilicen.",
-        "La actualización permite a los desarrolladores aprovechar al máximo las capacidades de la tarjeta gráfica Adreno en sus aplicaciones de inteligencia artificial.",
-        "Esto permite a los desarrolladores aprovechar al máximo las capacidades de la tarjeta gráfica Adreno en sus aplicaciones de inteligencia artificial."
+        "Se implementó soporte para broadcast en operaciones MUL_MAT de Adreno mediante OpenCL y se respetó el parámetro view_offs en operaciones Q8_0 MUL_MAT. Estos cambios optimizan el rendimiento en entornos de inferencia multihilo.",
+        "Mejora la eficiencia de la inferencia en dispositivos con GPUs Adreno al permitir operaciones de matriz más eficientes en llama-server, sin requerir cambios en los modelos.",
+        "Descargar el binario llama-b10069-bin-win-opencl-adreno-arm64.zip para Windows arm64 o el equivalente en Linux/Android",
+        "La nota de versión no detalla limitaciones específicas."
       ],
       "etiquetas": [
-        "ia",
-        "tecnología"
+        "github",
+        "release",
+        "llm inference"
       ]
     },
     {
       "id": "ollama-ollama-v0-32-1",
-      "titulo": "Nueva versión de Ollama con mejoras en Gemma 4 y",
+      "titulo": "Ollama v0.32.1 mejora llamadas de herramientas y fuga de...",
       "fecha": "2026-07-20",
-      "resumen": "La versión 0.32.1 de Ollama ha sido lanzada con mejoras en Gemma 4 y correcciones de errores en el modelo de caché y la carga de modelos de texto.",
+      "resumen": "Corrige una fuga de memoria en modelos MLX, mejora la continuidad de respuestas de herramientas de Gemma 4 y ajusta la carga de modelos con OLLAMA_LOAD_TIMEOUT.",
       "cuerpo": [
-        "La versión 0.32.1 de Ollama ha sido lanzada con mejoras en Gemma 4 y correcciones de errores en el modelo de caché y la carga de modelos de texto. Estas mejoras permiten a los usuarios de Ollama aprovechar al máximo sus modelos de lenguaje local, con una mayor confiabilidad y eficiencia en la ejecución de herramientas y la resolución de problemas.",
-        "Las mejoras en Gemma 4 permiten a los usuarios de Ollama aprovechar al máximo sus modelos de lenguaje local, con una mayor confiabilidad y eficiencia en la ejecución de herramientas y la resolución de problemas.",
-        "Las correcciones de errores en el modelo de caché permiten a los usuarios de Ollama evitar problemas de memoria y mejorar la estabilidad del sistema.",
-        "La carga de modelos de texto más eficiente permite a los usuarios de Ollama acceder a sus modelos de texto de manera más rápida y eficiente.",
-        "En resumen, la versión 0.32.1 de Ollama es una mejora significativa para los usuarios de la herramienta, con mejoras en Gemma 4 y correcciones de errores en el modelo de caché y la carga de modelos de texto. Sin embargo, es importante tener en cuenta que la versión 0.32.1 de Ollama puede requerir una versión moderna de Python (3.11 o superior) para funcionar correctamente."
+        "Se mejoró la llamada de herramientas y el razonamiento multivuelta de Gemma 4 con continuaciones más confiables. Se corrigió una fuga recurrente de caché en modelos MLX que aumentaba el uso de memoria entre solicitudes.",
+        "Estas correcciones mejoran la estabilidad y eficiencia del uso local de modelos, especialmente en sesiones prolongadas o con múltiples solicitudes.",
+        "Ejecutar `ollama signin` cuando se requiera autenticación para búsquedas web o fetch del agente.",
+        "La nota de versión no detalla limitaciones específicas."
       ],
       "etiquetas": [
-        "ia",
-        "tecnología"
+        "ollama",
+        "local-ai",
+        "agentic-ai"
       ]
     },
     {
       "id": "vllm-project-vllm-v0-25-1",
-      "titulo": "vLLM v0.25.1: Actualización de parche con correcciones de",
+      "titulo": "vLLM v0.25.1 corrige dos errores críticos en lanzamiento...",
       "fecha": "2026-07-20",
-      "resumen": "Se ha lanzado la versión 0.25.1 de vLLM, una actualización de parche que incluye dos correcciones de errores objetivo sobre la versión 0.25.0.",
+      "resumen": "Soluciona bloqueo al iniciar modelos sin FFmpeg y evita corrupción de salida por incompatibilidad de tipos de dato en fusiones cuantizadas.",
       "cuerpo": [
-        "Se ha lanzado la versión 0.25.1 de vLLM, una actualización de parche que incluye dos correcciones de errores objetivo sobre la versión 0.25.0. Estas correcciones solucionan problemas de bloqueo de modelos al no estar disponible FFmpeg en el sistema y también soluciona problemas de tipos de datos incompatibles en la fusión de reducción de RMSNorm y cuantificación estática.",
-        "Estas correcciones son importantes porque permiten a los usuarios de vLLM utilizar la herramienta sin problemas de bloqueo de modelos y sin problemas de tipos de datos incompatibles.",
-        "Puedes probar esta versión actualizada de vLLM descargando la última versión desde el repositorio de GitHub de vllm-project/vllm.",
-        "Es importante mencionar que esta actualización solo corrige problemas específicos y no incluye nuevas características.",
-        "En resumen, la versión 0.25.1 de vLLM es una actualización de parche que incluye dos correcciones de errores objetivo sobre la versión 0.25.0. Estas correcciones solucionan problemas de bloqueo de modelos al no estar disponible FFmpeg en el sistema y también soluciona problemas de tipos de datos incompatibles en la fusión de reducción de RMSNorm y cuantificación estática."
+        "Ahora el error por falta de FFmpeg system se retrasa hasta su uso real, evitando bloqueos al iniciar modelos que no requieren TorchCodec. Se añadió una verificación de tipo de dato para evitar fusiones dañinas en operaciones allreduce + RMSNorm + cuantización.",
+        "Permite iniciar modelos como Qwen/Qwen3-VL-2B-Instruct sin FFmpeg instalado y previene salidas corruptas como tokens repetidos '!!!!!' en modelos NVFP4 con mezcla de tipos de dato.",
+        "Ejecutar vllm serve Qwen/Qwen3-VL-2B-Instruct sin FFmpeg instalado o usar modelos NVFP4 con pesos RMSNorm en FP32 y activaciones en BF16.",
+        "La nota de versión no detalla limitaciones específicas."
       ],
       "etiquetas": [
-        "ia",
-        "tecnología"
+        "release",
+        "inference",
+        "llm inference"
       ]
     },
     {
       "id": "browser-use-browser-use-0-13-6",
-      "titulo": "Nueva versión de browser-use",
-      "fecha": "2026-07-17",
-      "resumen": "La versión 0.13.6 de browser-use ha sido lanzada con mejoras en la automatización de tareas en línea.",
+      "titulo": "browser-use lanza versión 0.13.6 con Browser Harness 0.1.6",
+      "fecha": "2026-07-20",
+      "resumen": "Actualización que actualiza el componente Browser Harness a la versión 0.1.6, sin cambios funcionales adicionales documentados.",
       "cuerpo": [
-        "La versión 0.13.6 de browser-use ha sido lanzada con mejoras en la automatización de tareas en línea. Esta herramienta es útil para automatizar tareas en línea, lo que puede ahorrar tiempo y recursos.",
-        "Browser-use permite a los agentes de IA utilizar un navegador web de manera similar a como lo hacen los humanos. Esto es importante para desarrolladores que buscan crear agentes de IA que puedan interactuar con sitios web de manera efectiva.",
-        "Sin embargo, la herramienta aún tiene algunas limitaciones, como la necesidad de una conexión estable a Internet y la posibilidad de errores en la automatización de tareas. Puedes probar browser-use descargando la versión 0.13.6 desde GitHub y siguiendo las instrucciones de instalación. También puedes utilizar la biblioteca Python para automatizar tareas en línea."
+        "Se liberó la versión 0.13.6 de browser-use con Browser Harness 0.1.6. No se detallan otros cambios además de esta actualización de componente.",
+        "Browser Harness es un componente clave para la automatización de navegadores en agentes de IA, lo que puede mejorar la estabilidad o rendimiento en tareas web automatizadas.",
+        "Consulte la nota oficial",
+        "La nota de versión no detalla limitaciones específicas."
       ],
       "etiquetas": [
-        "ia",
-        "tecnología"
+        "release",
+        "browser-automation",
+        "ai-agents"
       ]
     },
     {
