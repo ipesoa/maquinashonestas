@@ -3,6 +3,90 @@
   "actualizado": "2026-07-20",
   "posts": [
     {
+      "id": "comfyui-v0-28-0",
+      "titulo": "ComfyUI v0.28.0: mejoras de seguridad y nuevas",
+      "fecha": "2026-07-20",
+      "resumen": "La versión 0.28.0 de ComfyUI incluye mejoras de seguridad, correcciones de errores y nuevas características que mejoran la experiencia del usuario y la",
+      "cuerpo": [
+        "La versión 0.28.0 de ComfyUI es una herramienta de difusión de modelos de inteligencia artificial que ha sido mejorada con nuevas características y correcciones de errores.",
+        "Entre las mejoras de seguridad se encuentran la corrección de errores y la mejora de la estabilidad de la herramienta.",
+        "Además, la versión 0.28.0 de ComfyUI incluye nuevas características que mejoran la experiencia del usuario y la estabilidad de la herramienta.",
+        "Puedes probar la versión 0.28.0 de ComfyUI descargando el código fuente desde GitHub y siguiendo las instrucciones de instalación.",
+        "La versión 0.28.0 de ComfyUI no incluye soporte para todas las plataformas ni para todos los modelos de difusión."
+      ],
+      "etiquetas": [
+        "ia",
+        "tecnología"
+      ]
+    },
+    {
+      "id": "llama-cpp-b10069",
+      "titulo": "Actualización de llama.cpp con soporte para broadcast para",
+      "fecha": "2026-07-20",
+      "resumen": "La biblioteca de inteligencia artificial llama.cpp ha sido actualizada con soporte para broadcast para Adreno MUL_MAT y honoración de `view_offs` para Adreno",
+      "cuerpo": [
+        "La biblioteca de inteligencia artificial llama.cpp ha sido actualizada con soporte para broadcast para Adreno MUL_MAT y honoración de `view_offs` para Adreno Q8_0 MUL_MAT.",
+        "Esta actualización permite a los desarrolladores aprovechar al máximo las capacidades de la tarjeta gráfica Adreno en sus aplicaciones de inteligencia artificial.",
+        "Puedes descargar la última versión de llama.cpp desde el repositorio de GitHub de ggml-org/llama.cpp y seguir las instrucciones de compilación y ejecución.",
+        "La actualización solo está disponible para la versión b10069 de la biblioteca y puede requerir actualizaciones adicionales en las aplicaciones que la utilicen.",
+        "La actualización permite a los desarrolladores aprovechar al máximo las capacidades de la tarjeta gráfica Adreno en sus aplicaciones de inteligencia artificial.",
+        "Esto permite a los desarrolladores aprovechar al máximo las capacidades de la tarjeta gráfica Adreno en sus aplicaciones de inteligencia artificial."
+      ],
+      "etiquetas": [
+        "ia",
+        "tecnología"
+      ]
+    },
+    {
+      "id": "ollama-ollama-v0-32-1",
+      "titulo": "Nueva versión de Ollama con mejoras en Gemma 4 y",
+      "fecha": "2026-07-20",
+      "resumen": "La versión 0.32.1 de Ollama ha sido lanzada con mejoras en Gemma 4 y correcciones de errores en el modelo de caché y la carga de modelos de texto.",
+      "cuerpo": [
+        "La versión 0.32.1 de Ollama ha sido lanzada con mejoras en Gemma 4 y correcciones de errores en el modelo de caché y la carga de modelos de texto. Estas mejoras permiten a los usuarios de Ollama aprovechar al máximo sus modelos de lenguaje local, con una mayor confiabilidad y eficiencia en la ejecución de herramientas y la resolución de problemas.",
+        "Las mejoras en Gemma 4 permiten a los usuarios de Ollama aprovechar al máximo sus modelos de lenguaje local, con una mayor confiabilidad y eficiencia en la ejecución de herramientas y la resolución de problemas.",
+        "Las correcciones de errores en el modelo de caché permiten a los usuarios de Ollama evitar problemas de memoria y mejorar la estabilidad del sistema.",
+        "La carga de modelos de texto más eficiente permite a los usuarios de Ollama acceder a sus modelos de texto de manera más rápida y eficiente.",
+        "En resumen, la versión 0.32.1 de Ollama es una mejora significativa para los usuarios de la herramienta, con mejoras en Gemma 4 y correcciones de errores en el modelo de caché y la carga de modelos de texto. Sin embargo, es importante tener en cuenta que la versión 0.32.1 de Ollama puede requerir una versión moderna de Python (3.11 o superior) para funcionar correctamente."
+      ],
+      "etiquetas": [
+        "ia",
+        "tecnología"
+      ]
+    },
+    {
+      "id": "vllm-project-vllm-v0-25-1",
+      "titulo": "vLLM v0.25.1: Actualización de parche con correcciones de",
+      "fecha": "2026-07-20",
+      "resumen": "Se ha lanzado la versión 0.25.1 de vLLM, una actualización de parche que incluye dos correcciones de errores objetivo sobre la versión 0.25.0.",
+      "cuerpo": [
+        "Se ha lanzado la versión 0.25.1 de vLLM, una actualización de parche que incluye dos correcciones de errores objetivo sobre la versión 0.25.0. Estas correcciones solucionan problemas de bloqueo de modelos al no estar disponible FFmpeg en el sistema y también soluciona problemas de tipos de datos incompatibles en la fusión de reducción de RMSNorm y cuantificación estática.",
+        "Estas correcciones son importantes porque permiten a los usuarios de vLLM utilizar la herramienta sin problemas de bloqueo de modelos y sin problemas de tipos de datos incompatibles.",
+        "Puedes probar esta versión actualizada de vLLM descargando la última versión desde el repositorio de GitHub de vllm-project/vllm.",
+        "Es importante mencionar que esta actualización solo corrige problemas específicos y no incluye nuevas características.",
+        "En resumen, la versión 0.25.1 de vLLM es una actualización de parche que incluye dos correcciones de errores objetivo sobre la versión 0.25.0. Estas correcciones solucionan problemas de bloqueo de modelos al no estar disponible FFmpeg en el sistema y también soluciona problemas de tipos de datos incompatibles en la fusión de reducción de RMSNorm y cuantificación estática."
+      ],
+      "etiquetas": [
+        "ia",
+        "tecnología"
+      ]
+    },
+    {
+      "id": "browser-use-browser-use-0-13-6",
+      "titulo": "Nueva versión de browser-use",
+      "fecha": "2026-07-17",
+      "resumen": "La versión 0.13.6 de browser-use ha sido lanzada con mejoras en la automatización de tareas en línea.",
+      "cuerpo": [
+        "La versión 0.13.6 de browser-use ha sido lanzada con mejoras en la automatización de tareas en línea. Esta herramienta es útil para automatizar tareas en línea, lo que puede ahorrar tiempo y recursos.",
+        "Browser-use permite a los agentes de IA utilizar un navegador web de manera similar a como lo hacen los humanos. Esto es importante para desarrolladores que buscan crear agentes de IA que puedan interactuar con sitios web de manera efectiva.",
+        "Sin embargo, la herramienta aún tiene algunas limitaciones, como la necesidad de una conexión estable a Internet y la posibilidad de errores en la automatización de tareas. Puedes probar browser-use descargando la versión 0.13.6 desde GitHub y siguiendo las instrucciones de instalación. También puedes utilizar la biblioteca Python para automatizar tareas en línea."
+      ],
+      "etiquetas": [
+        "ia",
+        "tecnología"
+      ]
+    },
+    {
       "id": "agentes-ia-escritorio",
       "titulo": "Los agentes de IA llegan al escritorio",
       "fecha": "2026-07-20",
@@ -12,7 +96,10 @@
         "El cambio importa porque transforma la IA de consultor en compañero de trabajo. Ya no se trata de preguntar cómo se hace algo, sino de pedir que se haga. Las empresas que antes medían la utilidad en respuestas por minuto ahora la miden en tareas completadas.",
         "Quedan preguntas honestas encima de la mesa: qué permisos damos, cómo auditamos lo que el agente hizo mientras no mirábamos, y quién responde cuando se equivoca. La comodidad llegó antes que las respuestas."
       ],
-      "etiquetas": ["ia", "tecnología"]
+      "etiquetas": [
+        "ia",
+        "tecnología"
+      ]
     },
     {
       "id": "chips-carrera-eficiencia",
@@ -24,7 +111,10 @@
         "Eso está redibujando el mapa. Países con energía barata y estable atraen inversiones que antes iban a donde estaban los ingenieros. Y los diseñadores de chips exploran arquitecturas especializadas que sacrifican versatilidad a cambio de eficiencia brutal en una sola cosa: mover matrices.",
         "La lectura honesta: la IA no compite solo por talento y datos, compite por enchufes. Y esa competición apenas empieza."
       ],
-      "etiquetas": ["tecnología", "mundo"]
+      "etiquetas": [
+        "tecnología",
+        "mundo"
+      ]
     },
     {
       "id": "regular-ia-sin-frenarla",
@@ -36,7 +126,11 @@
         "Europa apostó por reglas detalladas por niveles de riesgo. Otros prefieren principios generales y ver qué pasa. Entre medias, las empresas navegan un tablero donde el mismo producto puede ser legal en un país y papeleo infinito en el de al lado.",
         "Lo único claro es que la pregunta ya no es si regular, sino cómo hacerlo sin escribir leyes que nazcan viejas. Eso, de momento, nadie lo ha resuelto."
       ],
-      "etiquetas": ["ia", "mundo", "opinión"]
+      "etiquetas": [
+        "ia",
+        "mundo",
+        "opinión"
+      ]
     }
   ]
 }

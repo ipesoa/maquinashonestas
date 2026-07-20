@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://TUUSUARIO.github.io/maquinashonestas/</loc>
+    <loc>https://ipesoa.github.io/maquinashonestas/</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://TUUSUARIO.github.io/maquinashonestas/#agentes-ia-escritorio</loc>
+    <loc>https://ipesoa.github.io/maquinashonestas/#comfyui-v0-28-0</loc>
     <lastmod>2026-07-20</lastmod>
   </url>
   <url>
-    <loc>https://TUUSUARIO.github.io/maquinashonestas/#chips-carrera-eficiencia</loc>
+    <loc>https://ipesoa.github.io/maquinashonestas/#llama-cpp-b10069</loc>
     <lastmod>2026-07-20</lastmod>
   </url>
   <url>
-    <loc>https://TUUSUARIO.github.io/maquinashonestas/#regular-ia-sin-frenarla</loc>
+    <loc>https://ipesoa.github.io/maquinashonestas/#ollama-ollama-v0-32-1</loc>
+    <lastmod>2026-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ipesoa.github.io/maquinashonestas/#vllm-project-vllm-v0-25-1</loc>
+    <lastmod>2026-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ipesoa.github.io/maquinashonestas/#browser-use-browser-use-0-13-6</loc>
+    <lastmod>2026-07-17</lastmod>
+  </url>
+  <url>
+    <loc>https://ipesoa.github.io/maquinashonestas/#agentes-ia-escritorio</loc>
+    <lastmod>2026-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ipesoa.github.io/maquinashonestas/#chips-carrera-eficiencia</loc>
+    <lastmod>2026-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ipesoa.github.io/maquinashonestas/#regular-ia-sin-frenarla</loc>
     <lastmod>2026-07-20</lastmod>
   </url>
 </urlset>
