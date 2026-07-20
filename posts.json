@@ -3,6 +3,91 @@
   "actualizado": "2026-07-20",
   "posts": [
     {
+      "id": "hugging-face-diffusers-lanza-framework-para-generacion",
+      "titulo": "Hugging Face Diffusers lanza framework para generación...",
+      "fecha": "2026-07-20",
+      "resumen": "Framework de código abierto para generar imágenes, video y audio con modelos de difusión preentrenados, respaldado por más de 34 mil estrellas en GitHub.",
+      "cuerpo": [
+        "Hugging Face Diffusers se presenta como biblioteca de código abierto para generar imágenes, video y audio mediante modelos de difusión en PyTorch. Es la primera aparición registrada del proyecto, sin versión anterior previa.",
+        "Permite cargar modelos preentrenados con el método from_pretrained y construir sistemas de difusión personalizados, siendo el framework más usado y actualizado en su categoría.",
+        "Usa el método from_pretrained para cargar cualquier modelo de difusión preentrenado y consulta el Quickstart para comenzar.",
+        "La nota de versión no detalla limitaciones específicas."
+      ],
+      "etiquetas": [
+        "diffusion model",
+        "pytorch",
+        "image-generation"
+      ]
+    },
+    {
+      "id": "localai-ejecuta-modelos-ai-sin-gpu-en-cualquier-hardware",
+      "titulo": "LocalAI ejecuta modelos AI sin GPU en cualquier hardware",
+      "fecha": "2026-07-20",
+      "resumen": "Motor de IA de código abierto que ejecuta LLMs, visión, audio, imagen y video sin requerir GPU, con detección automática de backends.",
+      "cuerpo": [
+        "LocalAI se presenta como un motor de IA de código abierto que permite ejecutar modelos de lenguaje, visión, audio, imagen y video en cualquier hardware. Detecta automáticamente las capacidades del hardware y descarga los backends necesarios sobre la marcha.",
+        "Elimina la necesidad de GPU para ejecutar modelos de IA, lo que facilita el acceso a tecnologías de inteligencia artificial en hardware limitado o descentralizado.",
+        "Use docker start -i local-ai to restart an existing container. Inside the prompt, /models lists installed models and /model switches between them.",
+        "La nota de versión no detalla limitaciones específicas."
+      ],
+      "etiquetas": [
+        "open source ai",
+        "decentralized",
+        "llm"
+      ]
+    },
+    {
+      "id": "career-ops-ia-que-busca-empleo-en-cli-y-adapta-tu-cv",
+      "titulo": "Career-Ops: IA que busca empleo en CLI y adapta tu CV",
+      "fecha": "2026-07-20",
+      "resumen": "Herramienta de código abierto que escanea portales de empleo, califica ofertas de A a F y personaliza CVs localmente usando CLI de IA como Claude Code o Gemini.",
+      "cuerpo": [
+        "Career-Ops permite escanear portales de empleo y asignar una calificación de A a F a cada oferta. También adapta automáticamente el CV del usuario según cada descripción de puesto.",
+        "Ayuda a los usuarios a enfocar su búsqueda en ofertas con alta compatibilidad, evitando aplicaciones innecesarias y optimizando el uso del tiempo con un sistema que aprende de sus preferencias.",
+        "Ejecuta Career-Ops en tu CLI de IA compatible (Claude Code, Gemini, Codex, OpenCode...) tras configurar tu CV y preferencias laborales.",
+        "Las primeras evaluaciones son inexactas porque el sistema no conoce al usuario al inicio; requiere alimentación de contexto para mejorar."
+      ],
+      "etiquetas": [
+        "open source ai",
+        "ai-agent",
+        "job-search"
+      ]
+    },
+    {
+      "id": "upscayl-upscaler-de-imagenes-ai-gratuito-y-de-codigo",
+      "titulo": "Upscayl: upscaler de imágenes AI gratuito y de código...",
+      "fecha": "2026-07-20",
+      "resumen": "Aplicación multiplataforma que mejora resolución de imágenes con algoritmos AI, requiere GPU compatible con Vulkan.",
+      "cuerpo": [
+        "Upscayl se presenta como la primera aparición registrada de un upscaler de imágenes AI gratuito y de código abierto. Se ofrece para Linux, macOS y Windows con instalación mediante Flatpak, Snap, RPM, DEB o ZIP.",
+        "Permite ampliar imágenes sin pérdida de calidad, siendo utilizado en diseño y producción visual por su accesibilidad y rendimiento en entornos reales.",
+        "Descargar e instalar mediante Flatpak, Snap, RPM, DEB o ZIP; o instalar Node.js con Volta y ejecutar desde el código fuente.",
+        "Se requiere GPU compatible con Vulkan; muchas GPU integradas no funcionan, aunque se recomienda probar igualmente."
+      ],
+      "etiquetas": [
+        "open source ai",
+        "image upscaling",
+        "ai"
+      ]
+    },
+    {
+      "id": "google-lanza-gemma-4-31b-it-modelo-abierto-multimodal-de",
+      "titulo": "Google lanza Gemma-4-31B-it, modelo abierto multimodal de...",
+      "fecha": "2026-07-20",
+      "resumen": "Modelo de Google DeepMind con soporte para texto e imagen, ventana de contexto de 256K tokens y licencia Apache 2.0, disponible en Hugging Face.",
+      "cuerpo": [
+        "Google DeepMind lanzó oficialmente Gemma-4-31B-it como modelo abierto con pesos disponibles en Hugging Face. Es la primera versión registrada de esta familia, con soporte nativo para entrada de texto e imagen y salida de texto.",
+        "Permite ejecutar tareas de razonamiento, codificación y conversaciones estructuradas con soporte para 140 idiomas, y está optimizado para despliegues desde dispositivos móviles hasta servidores.",
+        "Descargar el modelo desde usando Transformers o Safetensors.",
+        "La nota de versión no detalla limitaciones específicas."
+      ],
+      "etiquetas": [
+        "huggingface",
+        "model",
+        "image-text-to-text"
+      ]
+    },
+    {
       "id": "comfyui-v0-28-0",
       "titulo": "ComfyUI v0.28.0 añade nodo de superposición de texto y...",
       "fecha": "2026-07-20",
