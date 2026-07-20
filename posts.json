@@ -1,7 +1,92 @@
 {
   "sitio": "máquinashonestas",
-  "actualizado": "2026-07-20",
+  "actualizado": "2026-07-21",
   "posts": [
+    {
+      "id": "strix-herramienta-open-source-de-penetration-testing-con-ia",
+      "titulo": "Strix: herramienta open-source de penetration testing con IA",
+      "fecha": "2026-07-21",
+      "resumen": "Agente de IA autónomo que escanea aplicaciones en busca de vulnerabilidades, valida hallazgos con pruebas de concepto y se integra con GitHub Actions.",
+      "cuerpo": [
+        "Strix es una herramienta open-source de penetration testing con IA que ejecuta código dinámicamente para encontrar y validar vulnerabilidades reales. Se integra automáticamente con GitHub Actions y escanea solo los archivos modificados en pull requests.",
+        "Permite a desarrolladores y equipos de seguridad detectar vulnerabilidades sin el sobrecargo del penetration testing manual ni los falsos positivos del análisis estático, con resultados en tiempo real y sin configuración previa.",
+        "Ejecuta el comando strix en la terminal; la primera ejecución descarga automáticamente la imagen Docker del sandbox.",
+        "La nota de versión no detalla limitaciones específicas."
+      ],
+      "etiquetas": [
+        "open source ai",
+        "ai-penetration-testing",
+        "github"
+      ]
+    },
+    {
+      "id": "osmantic-ods-convierte-tu-pc-en-un-servidor-de-ia-local",
+      "titulo": "Osmantic/ODS convierte tu PC en un servidor de IA local",
+      "fecha": "2026-07-21",
+      "resumen": "Instala de forma integrada LLM, chat, agents, RAG y generación de imágenes sin necesidad de configurar herramientas por separado.",
+      "cuerpo": [
+        "Osmantic/ODS ofrece una instalación unificada que integra LLM inference, chat UI, agents, RAG y generación de imágenes en un solo entorno. Permite ejecutar todo localmente sin depender de servicios en la nube.",
+        "Elimina la necesidad de ensamblar manualmente herramientas como Ollama, Open WebUI o ComfyUI, simplificando la puesta en marcha de un servidor de IA privado en equipos personales.",
+        "Usa el instalador de PowerShell mostrado en el repositorio o sigue el proceso para instalar una versión estable o commit auditado manualmente.",
+        "La nota de versión no detalla limitaciones específicas."
+      ],
+      "etiquetas": [
+        "llm inference",
+        "local-ai",
+        "self-hosted"
+      ]
+    },
+    {
+      "id": "mlx-vlm-permite-inferencia-y-ajuste-de-vlms-en-mac-con",
+      "titulo": "MLX-VLM permite inferencia y ajuste de VLMs en Mac con...",
+      "fecha": "2026-07-21",
+      "resumen": "Paquete para ejecutar y ajustar modelos de visión y lenguaje localmente en Mac usando MLX, sin necesidad de GPU externa.",
+      "cuerpo": [
+        "Se lanzó MLX-VLM como paquete para inferencia y fine-tuning de Vision Language Models en Mac mediante MLX. También soporta modelos Omni con audio y video.",
+        "Permite a desarrolladores ejecutar y ajustar modelos multimodales localmente en hardware Apple Silicon, optimizando el acceso a IA local sin depender de la nube.",
+        "Instala el paquete mlx-vlm usando pip: pip install mlx-vlm",
+        "La nota de versión no detalla limitaciones específicas"
+      ],
+      "etiquetas": [
+        "apple-silicon",
+        "local-ai",
+        "mlx"
+      ]
+    },
+    {
+      "id": "omlx-servidor-llm-para-apple-silicon-con-cache-en-ssd-y",
+      "titulo": "oMLX: servidor LLM para Apple Silicon con caché en SSD y...",
+      "fecha": "2026-07-21",
+      "resumen": "Servidor de inferencia LLM optimizado para Mac con batching continuo y caché persistente en SSD, gestionado desde la barra de menú.",
+      "cuerpo": [
+        "Se lanzó oMLX como servidor LLM nativo para Apple Silicon con caché de clave-valor en SSD y gestión desde la barra de menú de macOS. Incluye un CLI ligero en ~/.omlx/bin/omlx y actualizaciones automáticas integradas.",
+        "Permite reutilizar el contexto previo entre solicitudes, haciendo viable el uso local de LLMs en tareas de codificación con herramientas como Claude Code. La caché en SSD reduce la necesidad de recalcular contextos largos.",
+        "Descarga el archivo .dmg desde Releases, arrástralo a la carpeta Aplicaciones y ejecútalo.",
+        "Los kernels personalizados para GLM-5.2 y MiniMax M3 requieren macOS 15.0+, Xcode completo y no se construyen con pip install -e .; sin ellos, el rendimiento cae hasta 30x."
+      ],
+      "etiquetas": [
+        "apple-silicon",
+        "llm inference",
+        "macos"
+      ]
+    },
+    {
+      "id": "agente-convierte-guiones-en-prompts-para-video-con",
+      "titulo": "Agente convierte guiones en prompts para video con...",
+      "fecha": "2026-07-21",
+      "resumen": "PenShot analiza guiones en cualquier formato y genera prompts para Sora, Veo y Runway, manteniendo coherencia narrativa entre fragmentos mediante LangGraph y...",
+      "cuerpo": [
+        "Se lanzó un agente que parsea guiones de cine, animación o novelas y los divide en fragmentos de video optimizados para modelos de generación de video. Cada fragmento genera un prompt coherente con la continuidad de personajes y trama mediante memoria vectorial y funciones de llamada.",
+        "Permite automatizar la conversión de guiones en prompts listos para modelos de video AI, reduciendo la necesidad de reescribir manualmente cada escena y garantizando consistencia visual en producciones largas.",
+        "pip install penshot + 3 lines of code",
+        "la nota de versión no detalla limitaciones específicas"
+      ],
+      "etiquetas": [
+        "text to video",
+        "agent-to-agent",
+        "character-consistency"
+      ]
+    },
     {
       "id": "hugging-face-diffusers-lanza-framework-para-generacion",
       "titulo": "Hugging Face Diffusers lanza framework para generación...",

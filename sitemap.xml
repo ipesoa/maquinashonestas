@@ -2,9 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ipesoa.github.io/maquinashonestas/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ipesoa.github.io/maquinashonestas/#strix-herramienta-open-source-de-penetration-testing-con-ia</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ipesoa.github.io/maquinashonestas/#osmantic-ods-convierte-tu-pc-en-un-servidor-de-ia-local</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ipesoa.github.io/maquinashonestas/#mlx-vlm-permite-inferencia-y-ajuste-de-vlms-en-mac-con</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ipesoa.github.io/maquinashonestas/#omlx-servidor-llm-para-apple-silicon-con-cache-en-ssd-y</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ipesoa.github.io/maquinashonestas/#agente-convierte-guiones-en-prompts-para-video-con</loc>
+    <lastmod>2026-07-21</lastmod>
   </url>
   <url>
     <loc>https://ipesoa.github.io/maquinashonestas/#hugging-face-diffusers-lanza-framework-para-generacion</loc>
