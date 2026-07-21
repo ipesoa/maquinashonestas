@@ -3,6 +3,91 @@
   "actualizado": "2026-07-21",
   "posts": [
     {
+      "id": "devoxxgenie-plugin-para-intellij-idea-con-llms-locales-y",
+      "titulo": "DevoxxGenie plugin para IntelliJ IDEA con LLMs locales y...",
+      "fecha": "2026-07-21",
+      "resumen": "Plugin que integra LLMs locales y de nube para revisar, probar y explicar código, con soporte para Desarrollo Guiado por Especificaciones mediante CLI.",
+      "cuerpo": [
+        "Se lanzó por primera vez el plugin DevoxxGenie para IntelliJ IDEA. Ahora incluye soporte para Desarrollo Guiado por Especificaciones con CLI Runners.",
+        "Ayuda a desarrolladores a revisar, probar y explicar código usando modelos locales como Ollama o LMStudio, y servicios en la nube como OpenAI o Anthropic, mejorando la productividad con tareas automatizadas.",
+        "Instalar el plugin desde IntelliJ IDEA y colocar archivos SKILL.md en ~/.devoxxgenie/skills/, /.devoxxgenie/skills/, .claude/skills/ o .agents/skills/",
+        "Abrir repositorio: https://github.com/devoxx/DevoxxGenieIDEAPlugin"
+      ],
+      "etiquetas": [
+        "intellij-plugin",
+        "local llm",
+        "spec-driven-development"
+      ]
+    },
+    {
+      "id": "apocas-restai",
+      "titulo": "apocas/restai",
+      "fecha": "2026-07-21",
+      "resumen": "RESTai es una plataforma AIaaS open-source que soporta LLM públicos y locales, embeddings precisos, generación de imagen/audio y chat en vivo.",
+      "cuerpo": [
+        "RESTai añade soporte para LLM públicos y locales mediante Ollama, vLLM y otros, y permite generar imágenes y audio con cargadores dinámicos. La plataforma incluye un chat en vivo, un lenguaje gráfico basado en bloques y versionado de prompts.",
+        "Permite crear y consumir proyectos AI vía REST API, con análisis de tokens, costos y latencia, y facilita la integración de LLM sin bloqueo de proveedor.",
+        "consulte la nota oficial",
+        "Abrir repositorio: https://github.com/apocas/restai"
+      ],
+      "etiquetas": [
+        "github",
+        "local llm",
+        "blocky"
+      ]
+    },
+    {
+      "id": "ktransformers-ofrece-optimizacion-heterogenea-para",
+      "titulo": "KTransformers ofrece optimización heterogénea para...",
+      "fecha": "2026-07-21",
+      "resumen": "Framework que permite inferencia optimizada en CPU-GPU y fine-tuning de modelos MoE grandes mediante integración con LLaMA-Factory.",
+      "cuerpo": [
+        "KTransformers ahora expone dos capacidades desde su source tree kt-kernel: inferencia con kernels optimizados para CPU y fine-tuning supervisado de modelos MoE grandes. El marco original se archivó para mantener una estructura más clara.",
+        "Permite mejorar la eficiencia de la inferencia en hardware heterogéneo y facilita el fine-tuning de modelos de gran escala mediante integración con LLaMA-Factory.",
+        "Consulte la documentación oficial en el repositorio de GitHub para guías de inicio rápido y ejemplos.",
+        "Abrir repositorio: https://github.com/kvcache-ai/ktransformers"
+      ],
+      "etiquetas": [
+        "github",
+        "llm inference",
+        "heterogeneous computing"
+      ]
+    },
+    {
+      "id": "lista-curada-de-papers-de-video-diffusion-actualizada",
+      "titulo": "Lista curada de papers de video diffusion actualizada...",
+      "fecha": "2026-07-21",
+      "resumen": "Recolección automática de papers de arXiv sobre generación de video, incluyendo text-to-video, image-to-video y 16 categorías de investigación.",
+      "cuerpo": [
+        "Se lanzó una lista curada y actualizada diariamente de papers de video diffusion en GitHub. Se incluye una CLI con comandos como init, search, suggest, export-bib y readme.",
+        "Permite a investigadores y practicantes acceder de forma organizada a los últimos avances en generación de video, con filtrado por categoría, fecha y dominio de arXiv.",
+        "Ejecutar python main.py init para configurar palabras clave, dominios, rango de tiempo y claves API, luego usar subcomandos como search, suggest o export-bib.",
+        "Abrir repositorio: https://github.com/longxiang-ai/awesome-video-diffusions"
+      ],
+      "etiquetas": [
+        "github",
+        "arxiv",
+        "text-to-video"
+      ]
+    },
+    {
+      "id": "turbodiffusion",
+      "titulo": "TurboDiffusion",
+      "fecha": "2026-07-21",
+      "resumen": "TurboDiffusion es un framework de aceleración para la generación de video que puede aumentar la velocidad de la generación de video en un factor de 100-200",
+      "cuerpo": [
+        "Se lanzó TurboDiffusion, un framework de aceleración para la generación de video que utiliza SageAttention, SLA y rCM para acelerar la atención y la distilación de pasos. El framework puede aumentar la velocidad de la generación de video en un factor de 100-200 en una sola tarjeta gráfica RTX 5090.",
+        "TurboDiffusion puede revolucionar la generación de video al permitir la creación de videos de alta calidad de manera más rápida y eficiente.",
+        "Para probar TurboDiffusion, es necesario descargar los checkpoints y el modelo, y seguir las instrucciones de instalación y reproducibilidad en el archivo README.md.",
+        "Abrir repositorio: https://github.com/thu-ml/TurboDiffusion"
+      ],
+      "etiquetas": [
+        "github",
+        "diffusion model",
+        "ai-infra"
+      ]
+    },
+    {
       "id": "hkuds-nanobot-agente-de-ia-ligero-y-de-codigo-abierto",
       "titulo": "HKUDS/nanobot: agente de IA ligero y de código abierto",
       "fecha": "2026-07-21",
