@@ -3,6 +3,184 @@
   "actualizado": "2026-07-21",
   "posts": [
     {
+      "id": "hkuds-nanobot-agente-de-ia-ligero-y-de-codigo-abierto",
+      "titulo": "HKUDS/nanobot: agente de IA ligero y de código abierto",
+      "fecha": "2026-07-21",
+      "resumen": "Agente de IA autogestionado para herramientas locales, chats y flujos de trabajo, con interfaz web y memoria persistente.",
+      "cuerpo": [
+        "Se lanzó por primera vez como proyecto de código abierto con un núcleo ligero para ejecutar agentes de IA en entornos locales. Incluye una interfaz web, gestión de memoria persistente y soporte para claves de API como ANTHROPIC_API_KEY.",
+        "Permite a los usuarios poseer y ejecutar localmente un agente de IA con memoria duradera y acceso a herramientas sin depender de servicios externos continuos.",
+        "Instala nanobot-ai desde PyPI y ejecuta nanobot onboard --wizard con Python 3.11 o superior, usando un entorno virtual gestionado por uv, pipx o ~/.nanobot/venv.",
+        "La memoria persistente requiere un servicio pagado en Render, ya que no está disponible en el plan gratuito.",
+        "Abrir repositorio: https://github.com/HKUDS/nanobot"
+      ],
+      "etiquetas": [
+        "open source ai",
+        "ai-agent",
+        "self-hosted"
+      ]
+    },
+    {
+      "id": "openmonoagent-ai",
+      "titulo": "OpenMonoAgent.ai",
+      "fecha": "2026-07-21",
+      "resumen": "Agente terminal nativo de código abierto que ejecuta LLMs localmente, sin suscripciones ni facturación por tokens, instalable con un solo comando.",
+      "cuerpo": [
+        "Se lanzó OpenMonoAgent.ai como un agente de programación que ejecuta modelos LLM directamente en la máquina del usuario. Instala automáticamente un servidor de inferencia llama.cpp y contenedores Docker con un solo comando.",
+        "Permite realizar inferencias de IA sin costo por token ni envío de datos externos, garantizando privacidad y acceso perpetuo sin suscripciones.",
+        "Ejecutar el comando de instalación único descrito en la referencia completa del repositorio GitHub.",
+        "Abrir repositorio: https://github.com/StartupHakk/OpenMonoAgent.ai"
+      ],
+      "etiquetas": [
+        "github",
+        "local llm",
+        "terminal-native"
+      ]
+    },
+    {
+      "id": "google-lanza-cli-oficial-de-gemini-para-terminal",
+      "titulo": "Google lanza CLI oficial de Gemini para terminal",
+      "fecha": "2026-07-21",
+      "resumen": "Agente de IA de código abierto que permite acceder directamente a Gemini desde la línea de comandos, sin interfaz gráfica.",
+      "cuerpo": [
+        "Se lanzó la primera versión abierta del CLI de Gemini, integrando el modelo directamente en entornos de terminal. Se publican lanzamientos de prueba cada martes a las 23:59 UTC.",
+        "Permite acceso directo y ligero a Gemini desde la línea de comandos, útil para desarrolladores que buscan integración local sin interfaz gráfica.",
+        "Instala Gemini CLI siguiendo la guía de instalación en su documentación, configura la autenticación según tu caso de uso, y ejecuta comandos con --output-format json o --output-format stream-json para salida estructurada.",
+        "Las versiones de prueba pueden contener regresiones u otros problemas, y están sujetas a límites de cuota y términos de servicio.",
+        "Abrir repositorio: https://github.com/google-gemini/gemini-cli"
+      ],
+      "etiquetas": [
+        "cli",
+        "gemini",
+        "ai-agent"
+      ]
+    },
+    {
+      "id": "earendil-works-pi",
+      "titulo": "earendil-works/pi",
+      "fecha": "2026-07-21",
+      "resumen": "Infraestructura modular para agentes de IA con API unificada, bucle de agente, interfaz de terminal y CLI para codificación.",
+      "cuerpo": [
+        "Se lanza por primera vez el toolkit earendil-works/pi como infraestructura completa para agentes de IA. Incluye una API unificada para LLM, un bucle de agente, una interfaz de terminal (TUI) y un CLI para codificación.",
+        "Permite construir y ejecutar agentes de codificación de forma modular, con herramientas integradas para automatizar tareas en terminal sin depender de un solo modelo.",
+        "Instala el repositorio desde GitHub y sigue las instrucciones en CONTRIBUTING.md y AGENTS.md para usar el CLI y la TUI.",
+        "No incluye un sistema de permisos para restringir acceso al sistema de archivos, procesos, red o credenciales; se ejecuta con los permisos del usuario que lo lanza.",
+        "Abrir repositorio: https://github.com/earendil-works/pi"
+      ],
+      "etiquetas": [
+        "github",
+        "ai agent",
+        "cli"
+      ]
+    },
+    {
+      "id": "ai-toolkit-de-ostris",
+      "titulo": "AI Toolkit de ostris",
+      "fecha": "2026-07-21",
+      "resumen": "Suite de entrenamiento de código abierto para modelos diffusion, con interfaz GUI o CLI, compatible con hardware de consumo.",
+      "cuerpo": [
+        "Se lanza por primera vez el toolkit ostris/ai-toolkit como solución integral para fine-tuning de modelos diffusion. Ofrece ejecución mediante interfaz gráfica o línea de comandos, con soporte para hardware de consumo.",
+        "Permite entrenar modelos de imagen y video con una interfaz accesible sin sacrificar funcionalidades avanzadas, dirigida a ingenieros que necesitan control técnico detallado.",
+        "Ejecutar el script ./run_mac.zsh en macOS para instalar dependencias locales y lanzar la interfaz; o usar los comandos para instalar/actualizar y arrancar la UI, accesible en http://localhost:8675.",
+        "El soporte para Silicon Macs es experimental y no ha sido probado plenamente por falta de hardware con suficiente RAM.",
+        "Abrir repositorio: https://github.com/ostris/ai-toolkit"
+      ],
+      "etiquetas": [
+        "github",
+        "diffusion model",
+        "cli"
+      ]
+    },
+    {
+      "id": "ternary-bonsai-27b-gguf",
+      "titulo": "Ternary-Bonsai-27B-gguf",
+      "fecha": "2026-07-21",
+      "resumen": "Modelo cuantizado en ternario (−1, 0, +1) con GGUF, 9.4x más pequeño que FP16, retiene el 95% del rendimiento y ejecuta 26 tokens/s en Apple M5 Pro.",
+      "cuerpo": [
+        "Se lanzó el primer modelo Ternary-Bonsai-27B-gguf, que cuantiza pesos en tres valores (−1, 0, +1) con escala compartida por bloques de 128 pesos. Se publicó junto a una versión binaria previa (Bonsai-27B-gguf) que usa solo −1 y +1.",
+        "Permite inferencia de modelos de 27B en hardware limitado con un tamaño reducido a ~1.71 bits/peso y uso de memoria de ~1.3 GB, manteniendo el 95% del rendimiento de la versión FP16.",
+        "Usar con llama.cpp en CUDA, Metal o CPU, cargando el archivo GGUF directamente.",
+        "El tamaño real desplegado es de 2.125 bits/peso por uso de slots de 2 bits, no el mínimo teórico de 1.585 bits/peso, hasta que se implementen kernels ternarios nativos.",
+        "Consultar fuente original: https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf"
+      ],
+      "etiquetas": [
+        "gguf",
+        "2-bit",
+        "ternary"
+      ]
+    },
+    {
+      "id": "stable-diffusion-cpp-ejecuta-modelos-diffusion-en-c-c-puro",
+      "titulo": "stable-diffusion.cpp ejecuta modelos Diffusion en C/C++ puro",
+      "fecha": "2026-07-21",
+      "resumen": "Primera implementación en C/C++ sin dependencias de Python para inferencia de modelos como SD, Flux, Qwen Image y otros.",
+      "cuerpo": [
+        "Se lanzó stable-diffusion.cpp como proyecto independiente que ejecuta inferencia de modelos Diffusion en C/C++ puro. Permite cargar pesos en formatos .ckpt, .safetensors o .gguf sin requerir Python.",
+        "Habilita despliegues de generación de imágenes con bajo consumo de recursos y sin entorno Python, útil en sistemas embebidos o con restricciones de dependencias.",
+        "Descarga los pesos (.ckpt, .safetensors o .gguf) y consulta la documentación CLI y las guías de rendimiento y selección de backend en el repositorio.",
+        "La nota de versión indica que la API y las opciones de línea de comandos pueden cambiar frecuentemente.",
+        "Abrir repositorio: https://github.com/leejet/stable-diffusion.cpp"
+      ],
+      "etiquetas": [
+        "github",
+        "diffusion model",
+        "cplusplus"
+      ]
+    },
+    {
+      "id": "voicebox-estudio-de-voz-open-source-para-clonar-y-dictar",
+      "titulo": "Voicebox: estudio de voz open-source para clonar y dictar...",
+      "fecha": "2026-07-21",
+      "resumen": "Plataforma local que permite clonar voces, generar habla en 23 idiomas con 7 motores TTS y dictado global, sin depender de servicios en la nube.",
+      "cuerpo": [
+        "Se lanza Voicebox como estudio de voz open-source que ejecuta todo el flujo de entrada y salida de voz en la máquina local. Integra siete motores TTS, incluyendo Qwen3-TTS y MLX, y permite clonar voces con pocos segundos de audio.",
+        "Permite a usuarios controlar completamente la generación y captura de voz sin depender de proveedores en la nube como ElevenLabs o WisprFlow, con soporte para expresividad mediante etiquetas y efectos de audio personalizables.",
+        "Visita voicebox.sh para acceder a Docs, Download, Features, API y Troubleshooting; en Linux, consulta voicebox.sh/linux-install para construir desde el código fuente.",
+        "No están disponibles binarios precompilados para Linux; se requiere compilación desde el código fuente.",
+        "Abrir repositorio: https://github.com/jamiepine/voicebox"
+      ],
+      "etiquetas": [
+        "open source ai",
+        "voice-clone",
+        "qwen3-tts"
+      ]
+    },
+    {
+      "id": "crayotter-agente-autonomo-para-produccion-de-video-desde",
+      "titulo": "Crayotter: agente autónomo para producción de video desde...",
+      "fecha": "2026-07-21",
+      "resumen": "Sistema multimodal que convierte una solicitud de texto en un video editado completo mediante un flujo de tres fases: preparación, planificación y ejecución.",
+      "cuerpo": [
+        "Crayotter introduce un agente autónomo que ejecuta un flujo de tres fases para generar videos desde texto: preparación de materiales, investigación de un plan de edición y producción final. Se puede deshabilitar la fase de investigación con una variable de entorno para reducir el uso de tokens.",
+        "Permite la producción end-to-end de videos editados a partir de una sola instrucción de texto, con registros completos y análisis visual para depuración, lo que automatiza tareas complejas de edición y composición.",
+        "Descargar Crayotter-Windows-x64.zip desde la página de lanzamientos; asegurarse de que Microsoft Edge WebView2 esté instalado para abrir la interfaz nativa.",
+        "Abrir repositorio: https://github.com/idwts/Crayotter"
+      ],
+      "etiquetas": [
+        "text to video",
+        "ai-agent",
+        "video-production"
+      ]
+    },
+    {
+      "id": "ovisocr2-parsea-documentos-en-markdown-con-qwen3-5-0-8b",
+      "titulo": "OvisOCR2 parsea documentos en Markdown con Qwen3.5-0.8B",
+      "fecha": "2026-07-21",
+      "resumen": "Modelo de 0.8B que convierte imágenes de páginas de documentos en Markdown con texto, tablas, fórmulas y regiones visuales, con puntaje récord en...",
+      "cuerpo": [
+        "Se lanzó OvisOCR2, un modelo end-to-end de 0.8B parámetros que genera Markdown a partir de imágenes de documentos. Logró el primer puesto en OmniDocBench v1.6 con un puntaje de 96.58, superando métodos basados en pipelines.",
+        "Permite convertir documentos escaneados en estructuras legibles y procesables, incluyendo tablas, fórmulas y orden de lectura natural, con un tamaño de modelo pequeño y despliegue práctico.",
+        "Usa la interfaz en https://huggingface.co/spaces/ATH-MaaS/OvisOCR2 para subir imágenes o PDFs y obtener Markdown estructurado.",
+        "Puede producir salidas incorrectas o incompletas debido a la diversidad de documentos del mundo real; se recomienda verificar manualmente resultados en aplicaciones críticas.",
+        "Consultar fuente original: https://huggingface.co/ATH-MaaS/OvisOCR2"
+      ],
+      "etiquetas": [
+        "ocr",
+        "document-parsing",
+        "qwen3_5"
+      ]
+    },
+    {
       "id": "strix-herramienta-open-source-de-penetration-testing-con-ia",
       "titulo": "Strix: herramienta open-source de penetration testing con IA",
       "fecha": "2026-07-21",
