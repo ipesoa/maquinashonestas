@@ -3,6 +3,58 @@
   "actualizado": "2026-07-21",
   "posts": [
     {
+      "id": "thinkingmachines-inkling",
+      "titulo": "thinkingmachines/Inkling",
+      "fecha": "2026-07-21",
+      "resumen": "Modelo multimodal que acepta texto, imagen y audio y genera texto. Disponible en Hugging Face, con pesos abiertos y API.",
+      "cuerpo": [
+        "Se lanzó el modelo multimodal Inkling, capaz de procesar texto, imagen y audio y generar texto. Se publicaron pesos abiertos para investigación y desarrollo.",
+        "Permite a desarrolladores crear asistentes de código, chatbots y sistemas de generación con herramientas, facilitando la integración de IA en aplicaciones.",
+        "Ideal para ingenieros de software que desarrollan asistentes de código, chatbots y sistemas de búsqueda generativa, reduciendo el tiempo de prototipado.",
+        "Consultar fuente original: https://huggingface.co/thinkingmachines/Inkling"
+      ],
+      "etiquetas": [
+        "huggingface",
+        "model",
+        "image-text-to-text"
+      ]
+    },
+    {
+      "id": "invokeai-motor-creativo-lider-de-stable-diffusion",
+      "titulo": "InvokeAI: motor creativo líder de Stable Diffusion",
+      "fecha": "2026-07-21",
+      "resumen": "Invoke es un motor creativo líder para modelos Stable Diffusion, con WebUI de referencia y base para productos comerciales.",
+      "cuerpo": [
+        "InvokeAI introduce una interfaz web basada en React con experiencia de usuario líder. Incluye el Unified Canvas, que permite pintar, in/out-painting y otras herramientas de generación.",
+        "Permite a profesionales y artistas generar y crear medios visuales con tecnología AI avanzada.",
+        "Ideal para diseñadores gráficos que necesiten generar imágenes, bocetos o renders rápidamente.",
+        "Abrir repositorio: https://github.com/invoke-ai/InvokeAI"
+      ],
+      "etiquetas": [
+        "diffusion model",
+        "ai-art",
+        "stable-diffusion"
+      ]
+    },
+    {
+      "id": "angelslim-hy3-gguf",
+      "titulo": "AngelSlim/Hy3-GGUF",
+      "fecha": "2026-07-21",
+      "resumen": "Modelo de texto generativo de bajo consumo de bits",
+      "cuerpo": [
+        "Se ha lanzado el modelo de texto generativo AngelSlim/Hy3-GGUF, que es una versión cuantizada de bajo consumo de bits del modelo Hy3. El modelo está disponible en Hugging Face y se puede utilizar para generar texto de manera eficiente.",
+        "Este modelo es útil para aplicaciones que requieren la generación de texto en dispositivos con recursos limitados, como teléfonos móviles o dispositivos embebidos.",
+        "El modelo puede ser utilizado por desarrolladores de aplicaciones que necesitan generar texto de manera eficiente en dispositivos con recursos limitados.",
+        "El modelo requiere un conjunto de calibración para cuantizar el modelo y generar la matriz de importancia.",
+        "Consultar fuente original: https://huggingface.co/AngelSlim/Hy3-GGUF"
+      ],
+      "etiquetas": [
+        "huggingface",
+        "model",
+        "text-generation"
+      ]
+    },
+    {
       "id": "devoxxgenie-plugin-para-intellij-idea-con-llms-locales-y",
       "titulo": "DevoxxGenie plugin para IntelliJ IDEA con LLMs locales y...",
       "fecha": "2026-07-21",
