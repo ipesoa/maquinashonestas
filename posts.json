@@ -61,7 +61,7 @@
       "cuerpo": [
         "Se lanzó una lista curada y actualizada diariamente de papers de video diffusion en GitHub. Se incluye una CLI con comandos como init, search, suggest, export-bib y readme.",
         "Permite a investigadores y practicantes acceder de forma organizada a los últimos avances en generación de video, con filtrado por categoría, fecha y dominio de arXiv.",
-        "Ejecutar python main.py init para configurar palabras clave, dominios, rango de tiempo y claves API, luego usar subcomandos como search, suggest o export-bib.",
+        "Puede servir para preparar estados del arte, descubrir referencias para un proyecto y exportar una bibliografía inicial por categoría o periodo sin revisar manualmente arXiv cada día.",
         "Abrir repositorio: https://github.com/longxiang-ai/awesome-video-diffusions"
       ],
       "etiquetas": [
